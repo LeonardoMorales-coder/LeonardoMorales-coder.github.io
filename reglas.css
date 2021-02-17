@@ -1,0 +1,14 @@
+div p {
+	color:green;
+	text-align: left;
+}
+
+p {
+	color:red;
+	text-align: center;
+	font-family: arial, sans-serif
+}
+
+table {
+	text-align: center;
+}
