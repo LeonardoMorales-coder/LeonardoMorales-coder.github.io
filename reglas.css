@@ -30,3 +30,17 @@ hr {
 	background-color: rgba(208,207,207,1.00);
 	height: 1px;
 }
+header .Leonardo p {
+	font-family: sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.8;
+	overflow-y: auto;
+}
+header .workImages {
+	text-align: center;
+	display: block;
+	margin-top: 60px;
+	clear: both;
+}
