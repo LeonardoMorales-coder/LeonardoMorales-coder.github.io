@@ -14,25 +14,25 @@ header {
 
 header .Leonardo h1 {
 	font-family: 'Montserrat', sans-serif;
-	color: rgba(21,42,108,1.00);
+	color: red;
 	font-size: 30px;
 	font-weight: 700;
 	line-height: 24px;
 }
 header .Leonardo h3 {
 	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: green;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
 }
 hr {
-	background-color: rgba(208,207,207,1.00);
+	background-color: greenyellow;
 	height: 1px;
 }
 header .Leonardo p {
 	font-family: sans-serif;
-	color: rgba(146,146,146,1.00);
+	color: blue;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.8;
