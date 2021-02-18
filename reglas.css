@@ -19,6 +19,13 @@ header .Leonardo h1 {
 	font-weight: 700;
 	line-height: 24px;
 }
+header .Leonardo h2 {
+	font-family: sans-serif;
+	color: gray;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 24px;
+}
 header .Leonardo h3 {
 	font-family: sans-serif;
 	color: gray;
