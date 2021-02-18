@@ -21,18 +21,18 @@ header .Leonardo h1 {
 }
 header .Leonardo h3 {
 	font-family: sans-serif;
-	color: green;
+	color: dimgray;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 24px;
 }
 hr {
-	background-color: greenyellow;
+	background-color: dimgray;
 	height: 1px;
 }
 header .Leonardo p {
 	font-family: sans-serif;
-	color: blue;
+	color: darkgray;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.8;
