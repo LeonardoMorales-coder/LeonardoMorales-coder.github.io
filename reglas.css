@@ -52,9 +52,12 @@ header .workImages {
 	clear: both;
 }
 
-header .puebass {
+header .pruebass {
 	float: left;
 	clear: both;
 	margin-right: 3%;
 	margin-top: 5%;
+}
+table, th, td {
+  border: 1px solid black;
 }
