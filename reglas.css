@@ -38,15 +38,15 @@ hr {
 	background-color: lightblue;
 	height: 1px;
 }
-header .Leonardo p {
-	font-family: sans-serif;
-	color: darkgray;
+
+div p {
+    font-family: sans-serif;
+	color: darkslategray;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 1.8;
 	overflow-y: auto;
 }
-
 
 table, th, td {
   border: 1px solid black;
