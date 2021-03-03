@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style> 
+            h1 {
+	               text-align: center;
+	               display: block;
+                color: indianred;
+            }
+			p {
+                font-family: sans-serif;
+  				text-align: center;
+  				color: gray;
+			}
+            .container{  
+                    text-align: center;
+                    
+            } 
+            button {
+                      background-color: orangered;
+                      border: none;
+                      color: white;
+                      padding: 15px 32px;
+                      text-align: center;
+                      display: inline-block;
+                      font-size: 16px;
+            }
+		</style>
+		<title>Calculadora de Indice de Masa Corporal</title>
+	</head>
+	<h1>Calculadora de IMC: Indice de Masa Corporal</h1>
+	<body>
+	<p>Ingrese peso en kg: <input type="text" id="peso"></p>
+	<p>Ingrese alturaura en m: <input type="text" id="altura"></p>
+	<div class="container">
+	<button id="calc">Calcular IMC</button>
+    </div>
+	<hr>
+	<p>Tu IMC es: <span id="imc"></span></p>
+	<p>Tu resultado con respecto a tu salud es: <span id="lectura"></span></p>
+	<hr>
+	<p>Hecho por: Leonardo Morales</p>
+	<script type="text/javascript">
+		calc = document.getElementById("calc");
+		peso = document.getElementById("peso");
+		altura = document.getElementById("altura");
+		imc = document.getElementById("imc");
+		lectura = document.getElementById("lectura");
+
+		calc.onclick = function(){
+			if(peso.value!="" && altura.value!=""){
+				imcx = (peso.value / (altura.value* altura.value)).toFixed(3);
+				imc.innerHTML = imcx
+
+				if(imcx<18.5){ lectura.innerHTML = "Bajo de Peso"; }
+				else if(imcx>=18.5 && imcx<=24.9){ lectura.innerHTML = "Peso saludable"; }
+				else if(imcx>=25 && imcx<=29.9){ lectura.innerHTML = "Sobrepeso"; }
+				else if(imcx>=30 && imcx<=34.9){ lectura.innerHTML = "Obesidad de grado 1"; }
+				else if(imcx>=35 && imcx<=39.9){ lectura.innerHTML = "Obesidad de grado 2"; }
+				else if(imcx>40){ lectura.innerHTML = "Obesidad mórbida"; }
+
+			}else{
+				alert("Debes ingresar tus datos para calcular tu IMC")
+			}
+
+		};
+	</script>
+
+	</body>
+</html>
