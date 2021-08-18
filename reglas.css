@@ -1,10 +1,9 @@
 @charset "utf-8";
-<style>
-        .container {
-            background-color: #333;
-            display: flex;
-        }
-        .item {
-            background-color: #666;
-        }
-</style>
+
+.container {
+    background-color: #333;
+    display: flex;
+}
+.item {
+    background-color: #666;
+}
