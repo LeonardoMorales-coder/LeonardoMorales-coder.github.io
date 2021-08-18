@@ -1,54 +1,10 @@
 @charset "utf-8";
-body {
-	margin-left: auto;
-	margin-right: auto;
-    background-color: lightgoldenrodyellow;
-	width: 92%;
-	max-width: 960px;
-	padding-left: 2.275%;
-	padding-right: 2.275%;
-}
-header {
-	text-align: left;
-	display: block;
-}
-
-header .Leonardo h1 {
-	font-family: 'Montserrat', sans-serif;
-	color: black;
-	font-size: 30px;
-	font-weight: 700;
-	line-height: 24px;
-}
-header .Leonardo h2 {
-	font-family: sans-serif;
-	color: gray;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 24px;
-}
-header .Leonardo h3 {
-	font-family: sans-serif;
-	color: gray;
-	font-size: 16px;
-	font-weight: 700;
-	line-height: 24px;
-}
-hr {
-	background-color: lightblue;
-	height: 1px;
-}
-
-div p {
-    font-family: sans-serif;
-	color: dimgray;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1.8;
-	overflow-y: auto;
-}
-
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
+<style>
+        .container {
+            background-color: #333;
+            display: flex;
+        }
+        .item {
+            background-color: #666;
+        }
+</style>
