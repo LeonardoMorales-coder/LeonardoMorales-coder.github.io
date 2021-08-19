@@ -16,13 +16,28 @@
             height: 30vh;
             
             display: flex;
-            flex-direction: row-reverse; /*row |row-reverse| column | column-reverse*/
-            flex-wrap: wrap-reverse; /* nowrap | wrap | wrap-reverse*/
-            flex-flow: column wrap; /* es un shorcut de flex-direction y flex-wrap */
-            justify-content: flex-end; 
+            /*Define que una caja aserá flexbox de bloque o flexbox en línea */
+            /* felx | inline-flex */
+            flex-direction: row-reverse; 
+            /* Define el eje principal (main axis) row -x, column -y*/
+            /*row | row-reverse | column | column-reverse*/
+            flex-wrap: wrap-reverse; 
+            /*Define si la caja flexbox envuelve o NO a sus hijos*/
+            /* nowrap | wrap | wrap-reverse*/
+            flex-flow: column wrap; 
+            /* es un shorcut de flex-direction y flex-wrap */
+            justify-content: flex-start; 
             /* Defina la alineación de los elementos hijos, respecto al eje principal*/
             /* flex-star | center | flex-end | space-between | space-around | space- evenly */
             
+            align-items: stretch; 
+            /* Defina la alineación de los hijos en el eje transversal (cross axis) dentro de cada línea*/
+            /*stretch | flex-start | flex-end| center | baseline */
+            
+            align-content: stretch;
+            /* Defina la alineación de los elementos hijos, respecto al eje transversal, NO funciona cuando los hijos están en una sola linea*/
+            /* cuando existe nowrap no va a servir bien */
+            /* flex-star | center | flex-end | space-between | space-around | space- evenly | stretch*/
         }
         .item {
             border: medium solid #999;
@@ -30,6 +45,10 @@
             height: 20%;
             background-color: #666;
         }
+        
+        /*.item:nth-child(2), .item:nth-child(15) {
+            font-size: 250%;
+        }*/
     </style>
     
 </head>
