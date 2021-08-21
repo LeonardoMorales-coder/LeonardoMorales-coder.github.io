@@ -14,17 +14,18 @@
         .container {
             background-color: #333;
             height: 30vh;
+            width: 100%;
             
             display: flex;
             /*Define que una caja aserá flexbox de bloque o flexbox en línea */
             /* felx | inline-flex */
-            flex-direction: row-reverse; 
+            flex-direction: row; 
             /* Define el eje principal (main axis) row -x, column -y*/
             /*row | row-reverse | column | column-reverse*/
-            flex-wrap: wrap-reverse; 
+            flex-wrap: nowrap; 
             /*Define si la caja flexbox envuelve o NO a sus hijos*/
             /* nowrap | wrap | wrap-reverse*/
-            flex-flow: column wrap; 
+            flex-flow: row nowrap; 
             /* es un shorcut de flex-direction y flex-wrap */
             justify-content: flex-start; 
             /* Defina la alineación de los elementos hijos, respecto al eje principal*/
@@ -34,18 +35,31 @@
             /* Defina la alineación de los hijos en el eje transversal (cross axis) dentro de cada línea*/
             /*stretch | flex-start | flex-end| center | baseline */
             
-            align-content: stretch;
+            align-content: flex-start;
             /* Defina la alineación de los elementos hijos, respecto al eje transversal, NO funciona cuando los hijos están en una sola linea*/
             /* cuando existe nowrap no va a servir bien */
             /* flex-star | center | flex-end | space-between | space-around | space- evenly | stretch*/
         }
         .item {
             border: medium solid #999;
-            width: 20%;
-            height: 20%;
+            /*width: 100 px;*/
+            /*width: 20%;*/
+            /*height: 20%;*/
             background-color: #666;
+            flex-grow: 0;
+            /*Cuando la caja flexbox tenga espacio sobrante, es el factor de crecer, valor por defecto es 0, NO se aceptan valores negativos*/
+            flex-shrink: 1;
+            /*Cuando la caja flexbox NO tenga espacio sobante, es la habilidad o el factor de encogerse, valor por defecto es 1, NO se aceptan valores negativos. Es un booleano que activas o desactivas para hacer scroll horizontal*/
+            flex-basis: auto;
         }
         
+        .item:nth-child(2) {
+            /*flex-grow: 0;*/
+            flex-shrink: 2;
+        }
+        .item:nth-child(3) {
+            /*flex-grow: 0;*/
+        }
         /*.item:nth-child(2), .item:nth-child(15) {
             font-size: 250%;
         }*/
@@ -58,7 +72,7 @@
         <article class= "item">Flex item 2</article>
         <article class= "item">Flex item 3</article>
     </section>
-    <br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <section class="container">
         <article class= "item">Flex item 1</article>
         <article class= "item">Flex item 2</article>
