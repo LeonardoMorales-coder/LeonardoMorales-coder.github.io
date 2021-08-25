@@ -1,103 +1,78 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name = "viewport" content= "width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Aprendiendo Flexbox</title>
+    <title>Flexbox Grid Artesanal</title>
     <style>
         *,
-        *::after,
+        *:after,
         *::before {
             box-sizing: border-box;
         }
         .container {
-            background-color: #333;
-            height: 30vh;
-            width: 100%;
-            
-            display: flex;
-            /*Define que una caja aserá flexbox de bloque o flexbox en línea */
-            /* felx | inline-flex */
-            flex-direction: row; 
-            /* Define el eje principal (main axis) row -x, column -y*/
-            /*row | row-reverse | column | column-reverse*/
-            flex-wrap: nowrap; 
-            /*Define si la caja flexbox envuelve o NO a sus hijos*/
-            /* nowrap | wrap | wrap-reverse*/
-            flex-flow: row nowrap; 
-            /* es un shorcut de flex-direction y flex-wrap */
-            justify-content: flex-start; 
-            /* Defina la alineación de los elementos hijos, respecto al eje principal*/
-            /* flex-star | center | flex-end | space-between | space-around | space- evenly */
-            
-            align-items: stretch; 
-            /* Defina la alineación de los hijos en el eje transversal (cross axis) dentro de cada línea*/
-            /*stretch | flex-start | flex-end| center | baseline */
-            
-            align-content: flex-start;
-            /* Defina la alineación de los elementos hijos, respecto al eje transversal, NO funciona cuando los hijos están en una sola linea*/
-            /* cuando existe nowrap no va a servir bien */
-            /* flex-star | center | flex-end | space-between | space-around | space- evenly | stretch*/
+            margin: auto;
+            max-width: 1200px;
         }
-        .item {
-            border: medium solid #999;
-            /*width: 100 px;*/
-            /*width: 20%;*/
-            /*height: 20%;*/
-            background-color: #666;
-            flex-grow: 0;
-            /*Cuando la caja flexbox tenga espacio sobrante, es el factor de crecer, valor por defecto es 0, NO se aceptan valores negativos*/
-            flex-shrink: 1;
-            /*Cuando la caja flexbox NO tenga espacio sobante, es la habilidad o el factor de encogerse, valor por defecto es 1, NO se aceptan valores negativos. Es un booleano que activas o desactivas para hacer scroll horizontal*/
-            flex-basis: auto;
+        .flex-container {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        .flex-item {
+            border: thin solid #CCC;
+            flex: 0 0 100%;
+            
+        }
+        @media (min-width: 576px){
+            .flex-item {
+                flex: 0 0 50%;
+            }
+        }
+        @media (min-width: 768px){
+            .flex-item {
+                flex: 0 0 33.333333333%;
+            }
+        }
+        @media (min-width: 992px){
+            .flex-item {
+                flex: 0 0 25%%;
+            }
+        }
+        @media (min-width: 1200px){
+            .flex-item {
+                flex: 0 0 16.666666667%;
+            }
         }
         
-        .item:nth-child(2) {
-            /*flex-grow: 0;*/
-            flex-shrink: 2;
-        }
-        .item:nth-child(3) {
-            /*flex-grow: 0;*/
-        }
-        /*.item:nth-child(2), .item:nth-child(15) {
-            font-size: 250%;
-        }*/
     </style>
-    
 </head>
 <body>
-    <section class="container">
-        <article class= "item">Flex item 1</article>
-        <article class= "item">Flex item 2</article>
-        <article class= "item">Flex item 3</article>
-    </section>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <section class="container">
-        <article class= "item">Flex item 1</article>
-        <article class= "item">Flex item 2</article>
-        <article class= "item">Flex item 3</article>
-    </section>
-    <br><br>
-    <section class="container">
-        <article class= "item">Flex item 1</article>
-        <article class= "item">Flex item 2</article>
-        <article class= "item">Flex item 3</article>
-        <article class= "item">Flex item 4</article>
-        <article class= "item">Flex item 5</article>
-        <article class= "item">Flex item 6</article>
-        <article class= "item">Flex item 7</article>
-        <article class= "item">Flex item 8</article>
-        <article class= "item">Flex item 9</article>
-        <article class= "item">Flex item 10</article>
-        <article class= "item">Flex item 11</article>
-        <article class= "item">Flex item 12</article>
-        <article class= "item">Flex item 13</article>
-        <article class= "item">Flex item 14</article>
-        <article class= "item">Flex item 15</article>
-        <article class= "item">Flex item 16</article>
-        <article class= "item">Flex item 17</article>
-        <article class= "item">Flex item 18</article>
-    </section>
+   <h1> Flexbox Grid Artesanal</h1>
+    <div class="container">
+        <section class="flex-container">
+            <article class="flex-item">Item 1</article>
+            <article class="flex-item">Item 2</article>
+            <article class="flex-item">Item 3</article>
+            <article class="flex-item">Item 4</article>
+            <article class="flex-item">Item 5</article>
+            <article class="flex-item">Item 6</article>
+            <article class="flex-item">Item 7</article>
+            <article class="flex-item">Item 8</article>
+            <article class="flex-item">Item 9</article>
+            <article class="flex-item">Item 10</article>
+            <article class="flex-item">Item 11</article>
+            <article class="flex-item">Item 12</article>
+            <article class="flex-item">Item 13</article>
+            <article class="flex-item">Item 14</article>
+            <article class="flex-item">Item 15</article>
+            <article class="flex-item">Item 16</article>
+            <article class="flex-item">Item 17</article>
+            <article class="flex-item">Item 18</article>
+            <article class="flex-item">Item 19</article>
+            
+        </section>
+    </div>
 </body>
 </html>
