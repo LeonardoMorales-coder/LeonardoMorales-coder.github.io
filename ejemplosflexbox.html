@@ -20,6 +20,10 @@
             min-height: 100vh;
         }
         
+        img {
+            max-width: 100%;
+            height: auto;
+        }
         main {
             flex-grow: 1;
         }
@@ -59,6 +63,16 @@
         .hero-image h1 {
             font-size: 5vw;
         }
+        
+        .flex-responsive {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        .flex-responsive-item {
+            border: thin solid #F60;
+            flex: 1 1 200px;
+        }
         @media screen and (min-width: 1024px){
             .header {
                 display: flex;
@@ -70,6 +84,23 @@
             }
             .menu li {
                 padding: .5rem;
+            }
+            
+            .flex-container {
+                display: flex;
+                align-items: center;
+            }
+            
+            .flex-item {
+                flex: 0 0 50%;
+            }
+            
+            .flex-order-1 {
+                order: 1;
+            }
+            
+            .flex-row-reverse {
+                flex-direction: row-reverse;
             }
         }
     </style>
@@ -87,15 +118,58 @@
        </nav>
     </header>
     <main>
-        <h2>Contenido</h2>
         <article class="hero-image">
            <div>
             <h1> Flexbox is fucking COOL!!!</h1>
             </div>
         </article>
+        <section class="flex-container">
+            <article class="flex-item">
+            <h2> Titulo</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facilis aliquid illum, animi laboriosam incidunt eum, cupiditate, vel quos omnis corporis? Doloremque aliquam ullam voluptatem maiores minima eveniet veniam impedit.
+            </p>
+            </article>
+            <article class="flex-item">
+                <img src="https://placeimg.com/400/400/people">
+            </article>
+        </section>
+        <section class="flex-container flex-row-reverse">
+            <article class="flex-item">
+            <h2> Titulo</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed facilis aliquid illum, animi laboriosam incidunt eum, cupiditate, vel quos omnis corporis? Doloremque aliquam ullam voluptatem maiores minima eveniet veniam impedit.
+            </p>
+            </article>
+            <article class="flex-item">
+                <img src="https://placeimg.com/400/400/architecture">
+            </article>
+        </section>
+        <h2>Responsive sin Media Querias con Flexbox</h2>
+        <section class="flex-responsive">
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 5</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 10</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 15</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 1</article>
+            <article class="flex-responsive-item">Item Responsive 19</article>   
+        </section>
     </main>
     <footer class="titulares">
-        <h2>Footer</h2>
+        <h2>Sticky Footer</h2>
     </footer>
    
 </body>
