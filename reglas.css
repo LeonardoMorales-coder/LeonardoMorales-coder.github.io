@@ -30,6 +30,7 @@
             font-size: 1cm;
             font-weight: bold;
             font-family: cursive;
+            text-align: center;
         }
         h3 {
             font-size: 1cm;
@@ -49,8 +50,18 @@
         margin-right: 0px;
             font-style: italic;
         }
+        
         main {
             flex-grow: 1;
+        }
+
+        li {
+            display: list-item;
+            text-align: center;
+        }
+        .list {
+            list-style-position: inside;
+            text-align: right;
         }
         footer {
             padding: 1rem;
@@ -213,11 +224,11 @@
                 justify-content: space-evenly;
                 
             }
-            .menu ul {
+            .main ul {
                 display: flex;
                 
             }
-            .menu li {
+            .main li {
                 padding: 1rem;
             }
             
@@ -229,6 +240,7 @@
             .flex-item {
                 flex: 0 0 50%;
             }
+            
             
             .flex-order-1 {
                 order: 1;
