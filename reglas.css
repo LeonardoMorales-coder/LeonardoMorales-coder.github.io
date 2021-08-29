@@ -1,2 +1,120 @@
 @charset "utf-8";
 
+ *,
+        *:after,
+        *::before {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        h1, h2. h3, h4, h5 {
+            font-weight: 900;
+            line-height: 1.2;
+            margin: 0.5em 0;
+        }
+        h1 {
+            font-size: 1.5cm;
+            font-weight: bold;
+            font-family: serif;
+        }
+        h2 {
+            font-size: 1cm;
+            font-weight: bold;
+            font-family: cursive;
+        }
+        h3 {
+            font-size: 1cm;
+            font-weight: normal;
+            font-family: serif;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        main {
+            flex-grow: 1;
+        }
+        
+        .header {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+            background-color: azure;
+            color: black;
+            
+        }
+        .header a {
+            color: darkblue;
+            text-decoration: none;   
+            font-weight: 1500;
+            
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            font-size: .5cm;
+            
+        }
+        
+        .flex-responsive {
+            display: flex;
+            flex-flow: row wrap;
+        }
+        
+        .flex-responsive-item {
+            border: thin solid #F60;
+            flex: 1 1 200px;
+        }
+        .avatar {
+            text-align: center;
+        }
+        .avatar img {
+            border-radius: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            width: calc(var(--fluid-5) * 2.5);
+            height: 300px;
+            display: block;
+        }
+        @media screen and (min-width: 1024px){
+            .header {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                
+            }
+            .menu ul {
+                display: flex;
+                
+            }
+            .menu li {
+                padding: 1rem;
+            }
+            
+            .flex-container {
+                display: flex;
+                align-items: center;
+            }
+            
+            .flex-item {
+                flex: 0 0 50%;
+            }
+            
+            .flex-order-1 {
+                order: 1;
+            }
+            
+            .flex-row-reverse {
+                flex-direction: row-reverse;
+            }
+        }
