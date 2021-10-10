@@ -83,7 +83,7 @@ header {
 
 .form input {
   width: 60%;
-  height: 30px;
+  height: 40px;
   border: 2px solid black;
   border-radius: 10px;
 }
@@ -96,6 +96,12 @@ header {
     border-radius: 8px;
     color: white;
 
+}
+.form select {
+  width: 60%;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 .flex-item div{
     /*border: 2px solid black;*/
