@@ -31,10 +31,26 @@ h2, h3, h4, h5 {
     justify-content: center;
 }
 #name h1 {
-    font-size: 5rem;
+    font-size: 2rem;
 }  
-#sobre_mi {
-
+#info .sobre_mi{
+    display: grid;
+    grid-template-areas: perfil biografia biografia;
+}
+#info .sobre_mi .perfil {
+    grid-area: perfil;
+}
+#info .sobre_mi .biografia {
+    grid-area: biografia;
+    border-left: 3px solid black;
+    padding: 1rem;
+    background: green;
+}
+#info .sobre_mi .biografia h4 {
+    font-size: 3rem;
+}
+#info .sobre_mi .biografia p {
+    font-size: 1.5rem;
 }
 
 /* Otros */
