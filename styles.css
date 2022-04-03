@@ -101,6 +101,9 @@ h2, h3, h4, h5 {
     flex-direction: column;
     justify-content: center;
 }
+.flexbox-container > div:first-child {
+	margin-right: 10px;
+}
 
 
 
