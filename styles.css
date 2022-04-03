@@ -23,7 +23,7 @@ h2, h3, h4, h5 {
     background-color: #2748a0;
     text-align: center;
     width: auto;
-    height: 250px;
+    height: 300px;
 }
 #name {
     padding-top: 1rem;
@@ -32,9 +32,9 @@ h2, h3, h4, h5 {
 
 }
 #name h1 {
-    font-size: 3rem;
-    line-height: 2rem;
-    
+    font-size: 2.5rem;
+    line-height: 1.5rem;
+
 }  
 #info .sobre_mi{
     display: grid;
