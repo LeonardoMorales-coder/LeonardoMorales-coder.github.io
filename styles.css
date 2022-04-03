@@ -79,16 +79,22 @@ h2, h3, h4, h5 {
 }
 .flex-container {
     display: flex;
+    align-items: center;
 }
 
-.flexbox-container > div {
-	width: 50%;
-	padding: 10px;
-  background: #fff;
+.flex-item {
+    flex: 0 0 50%;
 }
 
-.flexbox-container > div:first-child {
-	margin-right: 10px;
+.flex-order-1 {
+    order: 1;
+}
+.seccion {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
