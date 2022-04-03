@@ -68,19 +68,7 @@ h2, h3, h4, h5 {
     height: 100px;
 }
 
-#flex-container {
-    display: flex;
-}
 
-#flexbox-container > div {
-	width: 50%;
-	padding: 10px;
-  background: #fff;
-}
-
-#flexbox-container > div:first-child {
-	margin-right: 10px;
-}
 /* Otros */
 
 .container {
@@ -88,6 +76,19 @@ h2, h3, h4, h5 {
     padding: 0 1.5rem;
     margin:auto;
     overflow: hidden;
+}
+.flex-container {
+    display: flex;
+}
+
+.flexbox-container > div {
+	width: 50%;
+	padding: 10px;
+  background: #fff;
+}
+
+.flexbox-container > div:first-child {
+	margin-right: 10px;
 }
 
 
