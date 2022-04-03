@@ -15,6 +15,10 @@ ul {
 img {
     width: 80%;
 }
+li {
+    display: list-item;
+    text-align: center;
+}
 h2, h3, h4, h5 {
 
 
@@ -70,6 +74,15 @@ h2, h3, h4, h5 {
     justify-content: space-between;
     align-items: center;
 }
+#main_footer .menu ul {
+    display: flex;
+    list-style-type: none;
+    font-size: .5cm;
+}
+#main_footer .menu li {
+    padding: 1rem;
+}
+
 
 
 
@@ -104,11 +117,7 @@ h2, h3, h4, h5 {
 .flexbox-container > div:first-child {
 	margin-right: 10px;
 }
-.menu ul {
-    list-style-type: none;
-    font-size: .5cm;
-    
-}
+
 
 
 
