@@ -26,16 +26,15 @@ h2, h3, h4, h5 {
     height: 400px;
 }
 #name {
-    padding-top: 2rem;
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
 
 }
 #name h1 {
-    font-size: 4rem;
+    font-size: 7rem;
     line-height: 1.5rem;
     
-
 }  
 #info .sobre_mi{
     display: grid;
