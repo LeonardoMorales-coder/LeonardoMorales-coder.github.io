@@ -23,7 +23,7 @@ h2, h3, h4, h5 {
     background-color: #ffa43a;
     text-align: center;
     width: auto;
-    height: 200px;
+    height: 700px;
 }
 #name {
     padding-top: 1rem;
@@ -35,8 +35,9 @@ h2, h3, h4, h5 {
 }  
 #info .sobre_mi{
     display: grid;
-    grid-template-areas: perfil biografia biografia;
+    grid-template-areas: 'perfil biografia biografia';
 }
+
 #info .sobre_mi .perfil {
     grid-area: perfil;
 }
