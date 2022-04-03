@@ -13,17 +13,17 @@ ul {
     list-style: none;
 }
 img {
-    width: 100%;
+    width: 80%;
 }
 h2, h3, h4, h5 {
 
 
 }
 #main_header {
-    background-color: #ffa43a;
+    background-color: #2748a0;
     text-align: center;
     width: auto;
-    height: 700px;
+    height: 200px;
 }
 #name {
     padding-top: 1rem;
@@ -48,15 +48,15 @@ h2, h3, h4, h5 {
     grid-area: biografia;
     border-left: 3px solid #525558;
     padding: 1rem;
-    background: #759eff;
+    background: whitesmoke;
 }
 #info .sobre_mi .biografia h4 {
     font-size: 3rem;
-    text-align: right;
+    text-align: left;
 }
 #info .sobre_mi .biografia p {
     font-size: 1.5rem;
-    text-align: left;
+    text-align: right;
 }
 
 /* Otros */
