@@ -63,10 +63,15 @@ h2, h3, h4, h5 {
 
 #main_footer {
     background-color: #2748a0;
-    text-align: center;
-    width: auto;
     height: 100px;
 }
+#main_footer .f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 
 
 /* Otros */
