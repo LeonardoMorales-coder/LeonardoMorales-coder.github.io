@@ -61,7 +61,7 @@ h2, h3, h4, h5 {
 }
 
 
-#main_header {
+#main_footer {
     background-color: #2748a0;
     text-align: center;
     width: auto;
@@ -75,6 +75,7 @@ h2, h3, h4, h5 {
     margin:auto;
     overflow: hidden;
 }
+
 @media (max-width: 800px) {
     #main_header {
         height: 30rem;
