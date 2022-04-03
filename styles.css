@@ -67,6 +67,20 @@ h2, h3, h4, h5 {
     width: auto;
     height: 100px;
 }
+
+#flex-container {
+    display: flex;
+}
+
+#flexbox-container > div {
+	width: 50%;
+	padding: 10px;
+  background: #fff;
+}
+
+#flexbox-container > div:first-child {
+	margin-right: 10px;
+}
 /* Otros */
 
 .container {
@@ -75,19 +89,8 @@ h2, h3, h4, h5 {
     margin:auto;
     overflow: hidden;
 }
-.flexbox-container {
-    display: flex;
 
-}
-.flexbox-container > div {
-	width: 50%;
-	padding: 10px;
-  background: #fff;
-}
 
-.flexbox-container > div:first-child {
-	margin-right: 10px;
-}
 
 @media (max-width: 800px) {
     #main_header {
