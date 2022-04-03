@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: wheat;
+    line-height: 1.7;   
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 80%;
+}
+li {
+    display: list-item;
+    text-align: center;
+}
+h2, h3, h4, h5 {
+
+
+}
+#main_header {
+    background-color: #2748a0;
+    text-align: left;
+    width: auto;
+    height: 400px;
+}
+#name {
+    padding-top: 5rem;
+    display: flex;
+    justify-content: center;
+
+}
+#name h1 {
+    font-size: 7rem;
+    line-height: 1.5rem;
+    
+}  
+#info .sobre_mi{
+    display: grid;
+    grid-template-areas: 'perfil biografia biografia';
+    grid-gap: 1.5rem;
+}
+
+#info .sobre_mi .perfil {
+    grid-area: perfil;
+}
+#info .sobre_mi .biografia {
+    grid-area: biografia;
+    border-left: 3px solid #525558;
+    padding: 1rem;
+    background: whitesmoke;
+}
+#info .sobre_mi .biografia h4 {
+    font-size: 3rem;
+    text-align: left;
+}
+#info .sobre_mi .biografia p {
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+
+#main_footer {
+    background-color: #2748a0;
+    height: 50px;
+}
+#main_footer .f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main_footer .menu ul {
+    display: flex;
+    list-style-type: none;
+    font-size: .5cm;
+}
+#main_footer .menu li {
+    padding: 1rem;
+}
+
+
+
+
+
+/* Otros */
+
+.container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin:auto;
+    overflow: hidden;
+}
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 2 1 auto;
+}
+
+.flex-order-1 {
+    order: 1;
+}
+.seccion {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.flexbox-container > div:first-child {
+	margin-right: 10px;
+}
+
+
+
+
+@media (max-width: 800px) {
+    #main_header {
+        height: 30rem;
+
+    }
+    #main_header 
+}
