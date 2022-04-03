@@ -19,7 +19,7 @@ h2, h3, h4, h5 {
 
 
 }
-#header {
+#main_header {
     background-color: #ffa43a;
     text-align: center;
     width: auto;
@@ -36,6 +36,7 @@ h2, h3, h4, h5 {
 #info .sobre_mi{
     display: grid;
     grid-template-areas: 'perfil biografia biografia';
+    grid-gap: 1.5rem;
 }
 
 #info .sobre_mi .perfil {
@@ -61,4 +62,11 @@ h2, h3, h4, h5 {
     padding: 0 1.5rem;
     margin:auto;
     overflow: hidden;
+}
+@media (max-width: 800px) {
+    #main_header {
+        height: 30rem;
+
+    }
+    #main_header 
 }
