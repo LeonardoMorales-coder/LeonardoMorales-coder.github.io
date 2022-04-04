@@ -1,5 +1,4 @@
 @charset "utf-8";
-/*<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">*/
 *,
     *:after,
     *::before {
@@ -90,6 +89,7 @@
     .borrar { 
         clear: both; 
     }	
+    /* menu*/
     main {
         flex-grow: 1;
     }
@@ -108,30 +108,31 @@
         background-color: #222;
         color: #EEE;
     }
+    /* Estilos para tabla */
     table {
         font-family: arial, sans-serif;
         border-collapse:collapse;
         width: 80%;
         border-color: #222;
         
-      }
-      
-      td, th {
+    }
+    
+    td, th {
         border: 1px solid black;
         text-align: center;
         padding: 8px;
-        
-      }
-      
-      tr:nth-child(even) {
-        background-color: rgba(150, 212, 212, 0.4);
-      }
-      
-      th:nth-child(even),td:nth-child(even) {
-        background-color: rgba(150, 212, 212, 0.4);
-      }
-    /* Utilidades */
+    }
     
+    tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+    }
+    
+    th:nth-child(even),td:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+    }
+    /* Estilos para tabla */
+
+    /* Utilidades */
     .icono{
         border-radius: 100%;
         margin-left: auto;
@@ -171,10 +172,8 @@
     .header a {
         color: darkblue;
         text-decoration: none;   
-        font-weight: 1500;
-        
+        font-weight: 1500;   
     }
-    
     .titulares {
         display: flex;
         flex-flow: row wrap;

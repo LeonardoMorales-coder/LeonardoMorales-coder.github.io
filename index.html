@@ -3,23 +3,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> <!--Unico uso para utilizar iconos de redes sociales en el pie de pagina-->
     <title>Leonardo Morales CV</title>
-    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="styles.css"> <!--Referencia a hoja de estilos-->
 </head>
 <body>
     <header class="header">
-        
-        <script type="text/javascript">
-            function ver(n) {
+        <script type="text/javascript"> // Funciones para el menu
+            function ver(n) { //Funcion para obtener lo seleccionado en el menu
                 document.getElementById("subseccion"+n).style.display="block"
                 }
-            function ocultar(n) {
+            function ocultar(n) { //Funcion para ocultar el menu
                 document.getElementById("subseccion"+n).style.display="none"
                 }
         </script>
-        <section>
+        <section> <!-- Barra de Navegacion desplegable-->
             
             <div id="navegador">
                 <ul>
@@ -44,8 +42,8 @@
         
         </section>
 
-        <h2> Leonardo A. Morales López </h2>
-        <section class="flex-container flex-row-reverse ">
+        <h2> Leonardo A. Morales López </h2> 
+        <section class="flex-container flex-row-reverse "> <!-- Contenedor de la frase inspiracional-->
             <article class="flex-item">
                 <h2> Frase que me inspira </h2>
                 <p>
@@ -57,13 +55,13 @@
             </article>
             <article class="flex-item avatar seccion">
 
-                <img src="imagenes/yo1.jpeg">
+                <img src="imagenes/yo1.jpeg"> <!-- Obtencion de mi imagen en HTML-->
                 <h3> Estudiante de ITC en ITESM CCM</h3>
             </article>
         </section>
     </header>
     <main>
-    <section id="SobreMi" class="flex-container">
+    <section id="SobreMi" class="flex-container"> <!-- Contenedor para contar sobre mi-->
             <article class="flex-item seccion">
             <h2> Sobre Mí</h2>
             
@@ -76,13 +74,13 @@
                 <p></p>
             </article>
     </section>
-    <section id="Educacion" class="flex-container flex-row-reverse">
+    <section id="Educacion" class="flex-container flex-row-reverse"> <!-- Contenedor para visualizar mi educacion-->
             <article class="flex-item seccion">
             <h2> Educación</h2>
             
             </article>
             <article class="flex-item">
-            <ul>
+            <ul> <!-- Lista de educacion-->
                 <li class="list">2019, Ingeniería en Tecnologías Computacionales en ITESM CCM</li>
                 <li class="list">2016, Preparatoria Bicultural en ITESM</li>
                 <li class="list">2013, Escuela Secundaria Kanic</li>
@@ -92,7 +90,7 @@
 
     <section class="flex-container color1">
         
-        <article id="HardS" class="flex-item seccion">
+        <article id="HardS" class="flex-item seccion"> <!-- Contenedor para lista de hard skills-->
             <h2> Hard Skills</h2>
             <ul>
                 <li class="list1">Programación Mobile en iOS</li>
@@ -103,7 +101,7 @@
                 <li class="list1">Interconexión de dispositivos</li>
             </ul>
         </article>
-        <article id= "SoftS" class="flex-item seccion">
+        <article id= "SoftS" class="flex-item seccion"> <!-- Contenedor para lista de soft skills-->
             <h2> Soft Skills</h2>
             <ul>
             <li class="list1">Adaptabilidad y flexibilidad en horarios</li>
@@ -115,7 +113,7 @@
             
         </article>
     </section>
-    <section  class="flex-container color1">
+    <section  class="flex-container color1"> <!--Contenedor para Intereses y Tecnologias-->
         <article id="Intereses" class="flex-item seccion">
             <h2> Intereses</h2>
             <ul>
@@ -147,7 +145,7 @@
     <section id="Experiencia">
         <h2>EXPERIENCIA</h2>
     </section><br>
-    <section class = "flex-container ">
+    <section class = "flex-container "> <!--Contenedor para desplegar experiencia-->
         <article class="flex-item">
             <h2> Desarrollo de Backend en Servicio Becario con Oxigeno.mx</h2>
             <p>
@@ -191,7 +189,7 @@
         </p>
         </article>
         <article class="flex-item">
-            <video src="imagenes/app_CETAC.mp4" autoplay muted loop></video>
+            <video src="imagenes/app_CETAC.mp4" autoplay muted loop></video> <!--Se despliega el video y se mantiene en loop sin audio-->
         </article>
     </section> 
     <section class = "flex-container ">
@@ -207,7 +205,7 @@
         
     </section>
 </section>
-<section class="flex-container flex-row-reverse">
+<section class="flex-container flex-row-reverse"> 
     <article class="flex-item">
     <h2> Documentación Amazon Connect</h2>
     <p>
@@ -217,8 +215,7 @@
     <article class="flex-item">
         <img src="imagenes/aws.png">
     </article>
-</section> 
-
+</section> <!--Seccion que despliega tabla de rutina -->
     <section id="Rutina" class="color1">
         <article class= "seccion">
             <h2>Tabla de rutina</h2>
@@ -418,27 +415,27 @@
               
         </article>
      </section>
-     <section id="Grad">
+     <section id="Grad"> <!--Seccion que despliega cuenta regresiva hasta la graduacion con js-->
         <article class= "seccion">
             <h2>Cuenta Regresiva para Graduación</h2>
             <h3>Fecha de Graduación: 23 de Junio 2023</h3>
         </article>
-        <h2 id="cuenta_regresiva"></h2>
+        <h2 id="cuenta_regresiva"></h2> <!--Creacion de id para obtener el texto de la cuenta regresiva-->
     
-        <script>
+        <script> // Funcion para obtener la cuenta regresiva de la graduacion
 
-        var graduacion = new Date("Jun 23, 2023 20:00:00").getTime();// Establecer fecha de la graduación 
-        var x = setInterval(function() { // Actualiza la cuenta cada segundo 
-        var hoy = new Date().getTime();  // encontrar la fecha de hoy 
-        var cuenta = graduacion - hoy; // restar la fecha limite a la de hoy.
+        var graduacion = new Date("Jun 23, 2023 20:00:00").getTime();// Se establece la fecha de graduación 
+        var x = setInterval(function() { // Actualizacion por segundo
+        var hoy = new Date().getTime();  // Obtener fecha actual
+        var cuenta = graduacion - hoy; // Resta entre fechas
             
-        // Calcular el tiempo por días, horas, minutos y segundos. 
+        // Calculo sel tiempo en días, horas, minutos y segundos. 
         var dia = Math.floor(cuenta / (1000 * 60 * 60 * 24));
         var hora = Math.floor((cuenta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var min = Math.floor((cuenta % (1000 * 60 * 60)) / (1000 * 60));
         var seg = Math.floor((cuenta % (1000 * 60)) / 1000);
             
-        // Muestra el resultado
+        // Se demuestra el enunciado a desplegar
         document.getElementById("cuenta_regresiva").innerHTML = dia + " días " + hora + " hrs "
         + min + " mins " + seg + " segs ";
         }, 1000);
@@ -446,20 +443,15 @@
     </section>
     </main>
 
-    <footer class="titulares">
+    <footer class="titulares"> <!--Despliegue del encabezado con enunciado de copyright y redes sociales-->
         <p>Copyright &copy; 2022. Derechos reservados de autor</p>
         
         <div class="social">
-		<!--<a href="https://www.facebook.com/leonardo.lm.10420/"><img src="iconos/facebook.png" alt="facebook"></a>
-		<a href="#"><img src="iconos/github.png" alt="github"></a>
-		<a href="#"><img src="iconos/linkedin.png" alt="linkedin"></a>
-		<a href="https://www.instagram.com/_lewis_galaxy_22/?r=nametag"><img src="iconos/instagram.png" alt="instagram"></a>
-        -->
-        <a href="https://www.linkedin.com/in/leonardo-a-morales-lopez-7461ab200/" class="fa fa-linkedin"></a>
-        <a href="https://www.facebook.com/leonardo.lm.10420/" class="fa fa-facebook"></a>
-        <a href="https://www.instagram.com/_lewis_galaxy_22/?r=nametag" class="fa fa-instagram"></a>
-        <a href="https://github.com/LeonardoMorales-coder" class="fa fa-github"></a>
-    </div>
+            <a href="https://www.linkedin.com/in/leonardo-a-morales-lopez-7461ab200/" class="fa fa-linkedin"></a>
+            <a href="https://www.facebook.com/leonardo.lm.10420/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/_lewis_galaxy_22/?r=nametag" class="fa fa-instagram"></a>
+            <a href="https://github.com/LeonardoMorales-coder" class="fa fa-github"></a>
+        </div>
     </footer>
 </body>
 </html>
