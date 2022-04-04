@@ -3,47 +3,80 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Leonardo Morales CV</title>
     <link type="text/css" rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="header">
-        <h2> Leonardo Morales  </h2>
-        <section class="flex-container flex-row-reverse">
-        <article class="flex-item">
-        <h2> SAIA Aerodesign</h2>
-        <p>
-            Experiencia de 2 años en la escudería SAIA Aerodesign diseñando la maquetación de la estructura en aviones a escala. Además, la participación en el consurso internacional de SAE Aerodesign.
-        </p>
-        </article>
-        <article class="flex-item">
-            <img src="imagenes/sae.png">
-        </article>
-    </section> <br> <br>
-    </header><br><br><br><br><br>
+        
+        <script type="text/javascript">
+            function ver(n) {
+                document.getElementById("subseccion"+n).style.display="block"
+                }
+            function ocultar(n) {
+                document.getElementById("subseccion"+n).style.display="none"
+                }
+        </script>
+        <section>
+            
+            <div id="navegador">
+                <ul>
+                <li id="seccion1" onmouseover="ver(1)" onmouseout="ocultar(1)">
+                    <a href="#">Menú</a>
+                    <div id="subseccion1">
+                    <p><a href="#SobreMi"> Sobre Mi</a></p>
+                    <p><a href="#Educacion"> Educación</a></p>
+                    <p><a href="#HardS"> HardS</a></p>
+                    <p><a href="#SoftS"> SoftS</a></p> 
+                    <p><a href="#Intereses"> Intereses</a></p> 
+                    <p><a href="#Tecs"> Tecnologias</a></p> 
+                    <p><a href="#Experiencia"> Experiencia</a></p> 
+                    <p><a href="#Rutina"> Rutina</a></p> 
+                    <p><a href="#Grad"> Graduacion</a></p> 
+                    </div>
+                </li>
+                
+                </ul>
+                <div class="borrar"></div>
+          </div>
+        
+        </section>
+
+        <h2> Leonardo A. Morales López </h2>
+        <section class="flex-container flex-row-reverse ">
+            <article class="flex-item">
+                <h2> Frase que me inspira </h2>
+                <p>
+                    “El éxito no se da de la noche a la mañana. Es cuando cada día eres un poco mejor que el día anterior. Todo suma”
+                </p>
+                <p>
+                    Dwayne Johnson
+                </p>
+            </article>
+            <article class="flex-item avatar seccion">
+
+                <img src="imagenes/yo1.jpeg">
+                <h3> Estudiante de ITC en ITESM CCM</h3>
+            </article>
+        </section>
+    </header>
     <main>
-    <section class="container">
-        <article class="avatar seccion">
-            <img src="imagenes/yo.jpeg">
-            <h1> Bienvenidos!</h1>
-            <br>
-            <h3> Estudiante de ITC en ITESM CCM</h3>
-        </article>
-    </section>
-    <section class="flex-container">
+    <section id="SobreMi" class="flex-container">
             <article class="flex-item seccion">
             <h2> Sobre Mí</h2>
             
             </article>
             <article class="flex-item">
                 <p>
-                Soy Estudiante de 5to semestre en la carrera de Ingeniería en Tecnologías Computacionales en ITESM CCM.
+                Soy Estudiante de 6to semestre en la carrera de Ingeniería en Tecnologías Computacionales en ITESM CCM.
                 </p>
-                <p>Tengo experiencia en desarrollo web, algoritmos, administración de proyectos, programación mobile, uso de frameworks y videojuegos.</p>
+                <p>Tengo experiencia en desarrollo web, algoritmos, bases de datos, administración de proyectos, programación mobile, uso de frameworks y videojuegos.</p>
                 <p></p>
             </article>
-    </section><br>
-    <section class="flex-container flex-row-reverse">
+    </section>
+    <section id="Educacion" class="flex-container flex-row-reverse">
             <article class="flex-item seccion">
             <h2> Educación</h2>
             
@@ -51,17 +84,17 @@
             <article class="flex-item">
             <ul>
                 <li class="list">2019, Ingeniería en Tecnologías Computacionales en ITESM CCM</li>
-                <li class="list">2016, Preparatoria Bicultural en ITES</li>
+                <li class="list">2016, Preparatoria Bicultural en ITESM</li>
+                <li class="list">2013, Escuela Secundaria Kanic</li>
             </ul>
             </article>
-    </section><br>
-    <section class="flex-container">
-            <article class="flex-item seccion">
-            <h2> Habilidades</h2>
-            
-            </article>
-            <article class="flex-item">
-                <ul>
+    </section>
+
+    <section class="flex-container color1">
+        
+        <article id="HardS" class="flex-item seccion">
+            <h2> Hard Skills</h2>
+            <ul>
                 <li class="list1">Programación Mobile en iOS</li>
                 <li class="list1">Programación Web Backend</li>
                 <li class="list1">Programación Web Frontend</li>
@@ -69,40 +102,49 @@
                 <li class="list1">Estructuras de datos y uso de algoritmos</li>
                 <li class="list1">Interconexión de dispositivos</li>
             </ul>
-                
-            </article>
-    </section>
-    <section class="flex-container flex-row-reverse">
-            <article class="flex-item seccion">
-            <h2> Intereses</h2>
+        </article>
+        <article id= "SoftS" class="flex-item seccion">
+            <h2> Soft Skills</h2>
+            <ul>
+            <li class="list1">Adaptabilidad y flexibilidad en horarios</li>
+            <li class="list1">Comunicación</li>
+            <li class="list1">Creatividad e Innovación</li>
+            <li class="list1">Trabajo en equipo y Colaboración</li>
+            <li class="list1">Liderazgo y Gestión de euipo</li>
+        </ul>
             
-            </article>
-            <article class="flex-item">
+        </article>
+    </section>
+    <section  class="flex-container color1">
+        <article id="Intereses" class="flex-item seccion">
+            <h2> Intereses</h2>
             <ul>
                 <li class="list">Apoyar en las comunidades que me encuentre para una mejora constante</li>
                 <li class="list">Me encanta aprender nuevas cosas</li>
                 <li class="list">Me gusta precticar deportes en mis tiempos libres</li>
                 <li class="list">Amante de la lectura y los videojuegos</li>
-                <li class="list">Aprendiendo de la vida</li>
+                <li class="list">Aprendiz de la vida</li>
                 
             </ul>
-            </article>
-    </section><br>
-    <section>
-       <article class= "seccion">
-        <h2>Tecnologías</h2>
-        <aside class= "arreglo">
-            <img class="icono" src="imagenes/c++.jpg">
-            <img class="icono" src="imagenes/html5.png">
-            <img class="icono" src="imagenes/matlab.png">
-            <img class="icono" src="imagenes/PT.png">
-            <img class="icono" src="imagenes/css.png">
-            <img class="icono" src="imagenes/mysql.png">
-            <img class="icono" src="imagenes/github.png">
-        </aside>
         </article>
-    </section><br><br>
-    <section>
+        <article  id="Tecs"class="flex-item seccion">
+            <h2> Tecnologías</h2>
+            <ul>
+                <li class="list1">C++</li>
+                <li class="list1">HTML5</li>
+                <li class="list1">CSS</li>
+                <li class="list1">MatLab</li>
+                <li class="list1">Packet Tracer</li>
+                <li class="list1">MySQL</li>
+                <li class="list1">Swift</li>
+                <li class="list1">Unity</li>
+                <li class="list1">GitHub</li>
+            </ul>
+            
+        </article>
+    </section>
+    
+    <section id="Experiencia">
         <h2>EXPERIENCIA</h2>
     </section><br>
     <section class = "flex-container ">
@@ -116,7 +158,7 @@
             <img src="imagenes/backend.jpg">
         </article>
         
-    </section><br><br>
+    </section>
     <section class="flex-container flex-row-reverse">
         <article class="flex-item">
         <h2> SAIA Aerodesign</h2>
@@ -127,7 +169,7 @@
         <article class="flex-item">
             <img src="imagenes/sae.png">
         </article>
-    </section> <br> <br>
+    </section> 
     
     <section class = "flex-container ">
         <article class="flex-item">
@@ -140,32 +182,284 @@
             <img src="imagenes/prepanet.png">
         </article>
         
-    </section><br><br>
+    </section>
+    <section class="flex-container flex-row-reverse">
+        <article class="flex-item">
+        <h2> Aplicación iOS para CETAC</h2>
+        <p>
+            Construcción de una aplicación de gestión de servicios y monitoreo en el Centro Tanatológico y Traslado en Ambulancia con Calidad Humana AC en iOS.
+        </p>
+        </article>
+        <article class="flex-item">
+            <video src="imagenes/app_CETAC.mp4" autoplay muted loop></video>
+        </article>
+    </section> 
+    <section class = "flex-container ">
+        <article class="flex-item">
+        <h2> IBM: Inteligencia Artificial</h2>
+        <p>
+            Proyecto que tiene como objetivo la movibilidad urbana mediante una simulación en Unity con Inteligencia Artificial.
+        </p>
+        </article>
+        <article class="flex-item">
+            <img src="imagenes/ibm.png">
+        </article>
+        
+    </section>
+</section>
+<section class="flex-container flex-row-reverse">
+    <article class="flex-item">
+    <h2> Documentación Amazon Connect</h2>
+    <p>
+        Ardua documentación para el gestionamiento de proyecto con Amazon Connect previo a la programación del sistema a implmentar.
+    </p>
+    </article>
+    <article class="flex-item">
+        <img src="imagenes/aws.png">
+    </article>
+</section> 
 
-    <section>
+    <section id="Rutina" class="color1">
         <article class= "seccion">
-         <h2>Tabla de rutina</h2>
-         <aside class= "arreglo">
-             <img class="icono" src="imagenes/c++.jpg">
-             
-         </aside>
-         </article>
-     </section><br><br>
+            <h2>Tabla de rutina</h2>
+            <table>
+                <tr>
+                  <th>Hora/Dia</th>
+                  <th>Domingo</th>
+                  <th>Lunes</th>
+                  <th>Martes</th>
+                  <th>Miercoles</th>
+                  <th>Jueves</th>
+                  <th>Viernes</th>
+                  <th>Sábado</th>
+                </tr>
+                <tr>
+                  <td>07:00</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>08:00</td>
+                  <td> </td>
+                  <td> Desayuno</td>
+                  <td> Desayuno</td>
+                  <td> Desayuno</td>
+                  <td> </td>
+                  <td> Desayuno</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>09:00</td>
+                  <td> </td>
+                  <td>Tarea</td>
+                  <td>Tarea</td>
+                  <td>Tarea</td>
+                  <td> </td>
+                  <td>Tarea</td>
+                  <td> </td>
+                </tr>
+                <tr>
+                  <td>10:00</td>
+                  <td> Desayuno</td>
+                  <td>Tarea</td>
+                  <td>Tarea</td>
+                  <td>Tarea</td>
+                  <td> Desayuno</td>
+                  <td>Tarea</td>
+                  <td> Desayuno</td>
+                </tr>
+                <tr>
+                  <td>11:00</td>
+                  <td>Familia </td>
+                  <td>Bachata</td>
+                  <td>Tenis de Mesa</td>
+                  <td>Bachata</td>
+                  <td> Familia</td>
+                  <td>Tenis de Mesa</td>
+                  <td>Tarea </td>
+                </tr>
+                <tr>
+                  <td>12:00</td>
+                  <td>Familia </td>
+                  <td>Bachata</td>
+                  <td>Tenis de Mesa</td>
+                  <td>Bachata</td>
+                  <td> Familia</td>
+                  <td>Tenis de Mesa</td>
+                  <td>Tarea </td>
+                </tr>
+                <tr>
+                  <td>13:00</td>
+                  <td> Familia</td>
+                  <td> Comida</td>
+                  <td> Comida</td>
+                  <td> Comida</td>
+                  <td> Comida</td>
+                  <td> Comida</td>
+                  <td> Familia</td>
+                </tr>
+                <tr>
+                  <td>14:00</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Familia</td>
+                </tr>
+                <tr>
+                  <td>15:00</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Tarea</td>
+                  <td> Familia</td>
+                  
+                </tr>
+                <tr>
+                  <td>16:00</td>
+                  <td> Comida</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Comida</td>
+                </tr>
+                <tr>
+                  <td>17:00</td>
+                  <td> Tarea</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Familia</td>
+                </tr>
+                <tr>
+                  <td>18:00</td>
+                  <td> Tarea</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Familia</td>
+                </tr>
+                <tr>
+                  <td>19:00</td>
+                  <td> Tarea</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Clase</td>
+                  <td> Familia</td>
+                </tr>
+                <tr>
+                  <td>20:00</td>
+                  <td> Cena</td>
+                  <td> Clase</td>
+                  <td> Cena</td>
+                  <td> Cena</td>
+                  <td> Clase</td>
+                  <td> Cena</td>
+                  <td> Cena</td>
+                </tr>
+                <tr>
+                  <td>21:00</td>
+                  <td> Leer</td>
+                  <td> Clase</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> Clase</td>
+                  <td> </td>
+                  <td> Leer</td>
+                </tr>
+                <tr>
+                  <td>22:00</td>
+                  <td> Leer</td>
+                  <td> Cena</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> Cena</td>
+                  <td> </td>
+                  <td> Leer</td>
+                </tr>
+                <tr>
+                  <td>23:00</td>
+                  <td> Dormir</td>
+                  <td> Dormir</td>
+                  <td> Dormir</td>
+                  <td> Dormir</td>
+                  <td> Dormir</td>
+                  <td> Dormir</td>
+                  <td> Dormir</td>
+                </tr>
+                <tr>
+                  <td>24:00</td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                  <td> </td>
+                </tr>
+              </table>
+              
+        </article>
+     </section>
+     <section id="Grad">
+        <article class= "seccion">
+            <h2>Cuenta Regresiva para Graduación</h2>
+            <h3>Fecha de Graduación: 23 de Junio 2023</h3>
+        </article>
+        <h2 id="cuenta_regresiva"></h2>
+    
+        <script>
+
+        var graduacion = new Date("Jun 23, 2023 20:00:00").getTime();// Establecer fecha de la graduación 
+        var x = setInterval(function() { // Actualiza la cuenta cada segundo 
+        var hoy = new Date().getTime();  // encontrar la fecha de hoy 
+        var cuenta = graduacion - hoy; // restar la fecha limite a la de hoy.
+            
+        // Calcular el tiempo por días, horas, minutos y segundos. 
+        var dia = Math.floor(cuenta / (1000 * 60 * 60 * 24));
+        var hora = Math.floor((cuenta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var min = Math.floor((cuenta % (1000 * 60 * 60)) / (1000 * 60));
+        var seg = Math.floor((cuenta % (1000 * 60)) / 1000);
+            
+        // Muestra el resultado
+        document.getElementById("cuenta_regresiva").innerHTML = dia + " días " + hora + " hrs "
+        + min + " mins " + seg + " segs ";
+        }, 1000);
+        </script>
+    </section>
     </main>
 
     <footer class="titulares">
         <p>Copyright &copy; 2022. Derechos reservados de autor</p>
-        <nav class="menu">
-            <ul>
-                <li><a href="https://www.facebook.com/leonardo.lm.10420/" >Facebook</a></li>
-                <li><a>|</a></li>
-                <li><a href="https://www.instagram.com/_lewis_galaxy_22/?r=nametag">Instagram</a></li>
-                <li><a>|</a></li>
-                <li><a href="">Github</a></li>
-                <li><a>|</a></li>
-                <li><a href="">LinkedIn</a></li>
-            </ul>    
-        </nav>
+        
+        <div class="social">
+		<!--<a href="https://www.facebook.com/leonardo.lm.10420/"><img src="iconos/facebook.png" alt="facebook"></a>
+		<a href="#"><img src="iconos/github.png" alt="github"></a>
+		<a href="#"><img src="iconos/linkedin.png" alt="linkedin"></a>
+		<a href="https://www.instagram.com/_lewis_galaxy_22/?r=nametag"><img src="iconos/instagram.png" alt="instagram"></a>
+        -->
+        <a href="https://www.linkedin.com/in/leonardo-a-morales-lopez-7461ab200/" class="fa fa-linkedin"></a>
+        <a href="https://www.facebook.com/leonardo.lm.10420/" class="fa fa-facebook"></a>
+        <a href="https://www.instagram.com/_lewis_galaxy_22/?r=nametag" class="fa fa-instagram"></a>
+        <a href="https://github.com/LeonardoMorales-coder" class="fa fa-github"></a>
+    </div>
     </footer>
 </body>
 </html>
